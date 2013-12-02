@@ -1,0 +1,56 @@
+.CustomScroll {
+	overflow:hidden; 
+	position:relative; 
+	z-index:1;
+	width:200px;
+	height:100px;
+	
+	.CS_content {
+		overflow:hidden;
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index:1;
+	}
+	
+	.CS_scrollbar_wrapper {
+		overflow:hidden;
+		position:absolute;
+		right:0px;
+		top:0px;
+		z-index:1;
+		height:100%;		
+		width:15px;
+	}
+	
+	.CS_scrollbar {
+		position:relative;
+		top:0px;
+		margin:0px auto;
+		cursor:pointer;
+		width:10px; 
+	}
+}
+
+/*skin*/
+		
+.CustomScroll {
+	border-radius:5px;
+	
+	.CS_content {
+		background:#F0F0E7;
+		border-radius:5px 0px 0px 5px;
+	}
+	
+	.CS_scrollbar_wrapper {
+		background:#e7e5e5;
+		border-radius:5px;
+	}
+	
+	.CS_scrollbar {
+		
+		background:#aaa9a9;
+		margin:0px auto; 
+		border-radius:5px;
+	}
+}

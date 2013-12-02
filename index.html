@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Кроссворд</title>	
+	
+	<link rel="Stylesheet" href="css/styles.css" />
+	
+	
+	<script type='text/javascript' src='scripts/jquery-1.7.2.js'></script>
+	<script type='text/javascript' src='scripts/jquery.mousewheel.js'></script>		
+	<script type='text/javascript' src='scripts/CustomScroll.js'></script>		
+	<script type='text/javascript' src='scripts/crossword.js'></script>		
+	<script>
+		$(function(){
+			var crosswordData = {
+				lettersTable:[
+					[ 1 , 1 , 1 , 1 , 0 , 0 , 0 ],
+					[ 0 , 0 , 0 , 1 , 1 , 0 , 1 ],
+					[ 0 , 1 , 1 , 1 , 0 , 1 , 1 ],
+					[ 1 , 0 , 1 , 0 , 1 , 0 , 1 ],
+					[ 1 , 0 , 1 , 1 , 1 , 0 , 1 ],
+					[ 0 , 0 , 0 , 0 , 1 , 1 , 1 ]
+				],
+				
+				wordsList:{
+					1:{
+						start:[0,0],
+						horizontal:true,
+						q:"один"
+					},
+					2:{
+						start:[0,3],
+						horizontal:false,
+						q:"два"
+					},
+					3:{
+						start:[1,3],
+						horizontal:true,
+						q:"три"
+					},
+					4:{
+						start:[1,6],
+						horizontal:false,
+						q:"четыре"
+					},
+					5:{
+						start:[2,1],
+						horizontal:true,
+						q:"пять"
+					},
+					6:{
+						start:[2,2],
+						horizontal:false,
+						q:"шесть"
+					},
+					7:{
+						start:[2,5],
+						horizontal:true,
+						q:"семь"
+					},
+					8:{
+						start:[3,0],
+						horizontal:false,
+						q:"восемь"
+					},
+					9:{
+						start:[3,4],
+						horizontal:false,
+						q:"девять"
+					},
+					10:{
+						start:[4,2],
+						horizontal:true,
+						q:"десять"
+					},
+					11:{
+						start:[5,4],
+						horizontal:true,
+						q:"одиннадцать"
+					},
+					
+				}
+			};
+			
+			var crossword = new Crossword(crosswordData);
+		});
+	</script>
+
+</head>
+<body>
+	<div class="crossword__container">
+		
+	</div>
+	<div class="questions">
+		
+	</div>
+	
+</body>
+</html>

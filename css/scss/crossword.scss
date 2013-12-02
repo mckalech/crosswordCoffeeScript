@@ -1,0 +1,75 @@
+.crossword__container{
+	float:left;
+	
+	margin:100px 100px;
+}
+.crossword__table{
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	
+	 td{
+		width:60px;
+		height:60px;
+		background:#000;
+		text-align:center;
+		vertical-align:middle;
+		border:1px solid white;
+	}
+	
+
+	.clickable{
+		position:relative;
+		cursor:pointer;
+		background:#e6e6e6;
+		
+		&:before{
+			content:attr(data-content);
+			font-size:12px;
+			position:absolute;
+			top:3px;
+			left:3px;
+		}
+		
+		&.word{
+			background:#f3f366;
+		}
+		
+		&.active{
+			background:#99fe6e;
+		}
+		
+		&.error{
+			background:red;
+		}
+	}
+	
+}
+
+.questions{
+	float:left;
+	
+	margin:100px 100px;
+}	
+
+.questions__block{
+	margin:20px auto;
+	width:330px; 
+	height:90px;
+	
+	li{
+		cursor:pointer;
+		padding:5px;
+		
+		&:hover{
+			background:#ddd;	
+		}
+	}
+	
+	.active{
+		background:#bbb;
+	}
+	
+}
